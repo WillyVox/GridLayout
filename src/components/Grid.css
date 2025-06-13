@@ -1,0 +1,106 @@
+
+/* 1. Grid Layout */
+.container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 10px;
+  }
+  .container-1 > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  /* 2. The grid-template-columns Property */
+  .grid-container-2 {
+    display: grid;
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto; /* Make a grid with 4 columns of equal */
+    grid-template-columns: 100px 200px 80px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Here, each column will take up 25% of the container width, splitting it equally */
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* Here, the second column will be twice as big as the others: */
+  }
+  .grid-container-2 > div {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  /* The grid-template-rows Property */
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: auto auto auto; /* display 3 columns */
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    grid-template-rows: 50px 100px 80px; /* set height of row 1 2 and 3 */
+    grid-template-rows: 100px 40px; /* set height of row 1 and 2 */
+  }
+  .grid-container-3 > div {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  /* 4. The justify-content Property */
+  .grid-container-4 {
+    display: grid;
+    grid-template-columns: 70px 70px 70px; /*Make the grid smaller than the container*/
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    justify-content: space-evenly;
+    justify-content: center;
+    justify-content: end;
+    justify-content: first baseline;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: left;
+    justify-content: right;
+    justify-content: space-around;
+    justify-content: space-between;
+  }
+  
+  .grid-container-4 > div {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  /* 5. The align-content Property */
+  .grid-container-5 {
+    display: grid;
+    height: 400px;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    align-content: center;
+    align-content: baseline;
+    align-content: end;
+    align-content: first baseline;
+    align-content: flex-end;
+    align-content: flex-start;
+    align-content: normal;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: stretch;
+  }
+  
+  .grid-container-5 > div {
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
